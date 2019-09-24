@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.page {
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  /*會使內容分等分*/
+  height: 100vh;
+  position: relative;
+}
+
+.countdownCol {
+  background: url(https://images.unsplash.com/photo-1462899006636-339e08d1844e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80) no-repeat center;
+  background-size: cover;
+}
+
+.time {
+  color: #fff;
+  text-transform: uppercase;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*順著父元素的主軸做排列。center為置中*/
+}
+
+.fuckOffer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.time span {
+  padding: 0 14px;
+  font-size: 10px;
+}
+
+.time span div {
+  font-size: 40px;
+}
+
+.newsletter {
+  width: 90%;
+}
+
+.newsletter h4 {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.newsletter input {
+  display: block;
+  margin: 12px auto;
+  width: 100%;
+  max-width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.newsletterBtn {
+  background: linear-gradient(125deg, #3498db, #34495e);
+  /*從125度的地方開始變色*/
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.newsletterBtn:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 900px) {
+  .col {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+/*# sourceMappingURL=offer.css.map */
